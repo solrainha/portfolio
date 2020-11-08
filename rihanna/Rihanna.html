@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html xmlns="//www.w3.org/1999/xhtml">
+<head><link rel="shortcut icon" href="{Favicon}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="//solrainha.github.io/resources/reset.css" /><a href="//www.suiomi.com"><credit></credit></a><link rel="stylesheet" type="text/css" href="//solrainha.github.io/resources/default.css" /><link rel="stylesheet" type="text/css" href="//solrainha.github.io/portfolio/rihanna/style.css" />
+<title>{Title}</title>
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+{block:Description}
+<meta name="description" content="{MetaDescription}" />
+{/block:Description}
+<meta name="color:Body Text" content="#696969" />
+<meta name="color:Blog Background" content="#fafafa" />
+<meta name="color:Border Colour" content="#eee" />
+<meta name="color:Link Colour" content="#333" />
+<meta name="color:Accent" content="#ffc3d9" />
+<meta name="color:Bold Colour" content="#333" />
+<meta name="color:Posts Colour" content="#fff" />
+<meta name="color:Title Colour" content="#333" />
+<meta name="select:Body Text Size" content="12px" title="12px" />
+<meta name="select:Body Text Size" content="13px" title="13px" />
+<meta name="select:Body Text Size" content="14px" title="14px" />
+<meta name="select:Body Text Size" content="15px" title="15px" />
+<meta name="if:Header" content="1" title="Show Header" />
+<meta name="if:Featured" content="1" title="Show Featured" />
+<meta name="if:About" content="1" title="Show About Box" />
+<meta name="if:Statistics" content="1" title="Show Statistics Box" />
+<meta name="if:Categories" content="1" title="Show Categories Box" />
+<meta name="if:Projects" content="1" title="Show Projects Box" />
+<meta name="if:Team" content="1" title="Show Team Box" />
+<meta name="if:Affiliates" content="1" title="Show Affiliates Box" />
+<meta name="if:Disclaimer" content="1" title="Show Disclaimer Box" />
+<meta name="image:Header Image" content="" />
+<meta name="text:Featured Section Title" content="Featured" title="Featured Section Title" />
+<meta name="image:Featured Image 1" content="" />
+<meta name="image:Featured Image 2" content="" />
+<meta name="image:Featured Image 3" content="" />
+<meta name="text:Featured Title 1" content="Title" title="Featured Title 1" />
+<meta name="text:Featured Title 2" content="Title" title="Featured Title 2" />
+<meta name="text:Featured Title 3" content="Title" title="Featured Title 3" />
+<meta name="text:Featured Description 1" content="Description" title="Featured Description 1" />
+<meta name="text:Featured Description 2" content="Description" title="Featured Description 2" />
+<meta name="text:Featured Description 3" content="Description" title="Featured Description 3" />
+<meta name="text:About Title" content="About" title="About Title" />
+<meta name="text:Statistics Title" content="Statistics" title="Statistics Title" />
+<meta name="text:Categories Title" content="Categories" title="Categories Title" />
+<meta name="text:Category 1 Name" content="Category 1" title="Link 1 Name" />
+<meta name="text:Category 2 Name" content="Category 2" title="Link 2 Name" />
+<meta name="text:Category 3 Name" content="Category 3" title="Link 3 Name" />
+<meta name="text:Category 4 Name" content="Category 4" title="Link 4 Name" />
+<meta name="text:Category 5 Name" content="Category 5" title="Link 5 Name" />
+<meta name="text:Category 1 URL" content="/" title="Category 1 URL" />
+<meta name="text:Category 2 URL" content="/" title="Category 2 URL" />
+<meta name="text:Category 3 URL" content="/" title="Category 3 URL" />
+<meta name="text:Category 4 URL" content="/" title="Category 4 URL" />
+<meta name="text:Category 5 URL" content="/" title="Category 5 URL" />
+<meta name="text:Projects Title" content="Projects" title="Projects Title" />
+<meta name="image:Projects Image 1" content="" />
+<meta name="image:Projects Image 2" content="" />
+<meta name="image:Projects Image 3" content="" />
+<meta name="text:Projects Title 1" content="Title" title="Projects Title 1" />
+<meta name="text:Projects Title 2" content="Title" title="Projects Title 2" />
+<meta name="text:Projects Title 3" content="Title" title="Projects Title 3" />
+<meta name="text:Projects Description 1" content="Description" title="Projects Description 1" />
+<meta name="text:Projects Description 2" content="Description" title="Projects Description 2" />
+<meta name="text:Projects Description 3" content="Description" title="Projects Description 3" />
+<meta name="text:Team Title" content="Team" title="Team Title" />
+<meta name="text:Affiliates Title" content="Affiliates" title="Affiliates Title" />
+<meta name="text:Disclaimer Title" content="Disclaimer" title="Disclaimer Title" />
+<meta name="text:Disclaimer Text" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin ante eu elit commodo, in sodales urna interdum. Integer commodo velit mauris, eu euismod turpis consequat sed. Proin eu finibus velit. Integer consectetur pulvinar ante id vestibulum. Sed pharetra mi et porttitor pulvinar. Suspendisse potenti. Ut pellentesque aliquet efficitur. Vestibulum pharetra pellentesque velit, ut molestie lacus bibendum vel." title="Disclaimer Text" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="92f442b199e247bbb0e4a83c-text/javascript"></script>
+<script src="//solrainha.github.io/resources/jquery.js" type="92f442b199e247bbb0e4a83c-text/javascript"></script>
+<script src="//solrainha.github.io/resources/captions.js" type="92f442b199e247bbb0e4a83c-text/javascript"></script>
+<script src="//solrainha.github.io/resources/tooltips.js" type="92f442b199e247bbb0e4a83c-text/javascript"></script>
+<script src="//solrainha.github.io/resources/videos.js" type="92f442b199e247bbb0e4a83c-text/javascript"></script>
+<script src="//solrainha.github.io/resources/scroll.js" type="92f442b199e247bbb0e4a83c-text/javascript"></script>
+<script src="//use.fontawesome.com/b67a5f5df8.js" type="92f442b199e247bbb0e4a83c-text/javascript"></script>
+<link href="//fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+<script type="92f442b199e247bbb0e4a83c-text/javascript" charset="utf-8">$(document).ready(function(){
+$("article.entry").unnest({yourCaption:".caption",wrapName:".tumblr_parent",newCaptionUsername:true,originalPostCaptionUsername:true,tumblrAvatars:true,usernameColon:false});
+$('aside.sidebar').stick_in_parent({offset_top: $(window).height() - 50 - $('aside.sidebar').outerHeight() + 0,inner_scrolling: true,});
+$(document.body).trigger("sticky_kit:recalc");
+});</script>
+</head><style type="text/css">
+
+:root{
+    --bodytext: {color:Body Text};
+    --blogbackground: {color:Blog Background};
+    --bordercolour: {color:Border Colour};
+    --linkcolour: {color:Link Colour};
+    --accent: {color:Accent};
+    --boldcolour: {color:Bold Colour};
+    --postscolour: {color:Posts Colour};
+    --titlecolour: {color:Title Colour};    
+    --bodytextsize: {select:Body Text Size};
+}
+
+header{background:url('{image:Header Image}')}
+
+{block:Permalink}
+header,section.featured{display:none;}
+{/block:Permalink}
+
+{CustomCSS}
+
+</style>
+<body>
+<nav><ul class='menu'>
+<li><a href='/'>Home</a></li>
+{block:AskEnabled}<li><a href="/ask">Message</a></li>{/block:AskEnabled}
+{block:SubmissionsEnabled}<li><a href="/submit">Submit</a></li>{/block:SubmissionsEnabled}
+{block:HasPages}{block:Pages}<li><a href='{URL}'>{Label}</a></li>{/block:Pages}{/block:HasPages}
+</ul></nav>
+{block:ifHeader}<header></header>{/block:ifHeader}
+{block:ifFeatured}
+<section class="featured">
+<div class="featured-label">{text:Featured Section Title}</div>
+<div class="featured-box">
+<div class="featured-image"><img src="{image:Featured Image 1}" /></div>
+<div class="featured-title">{text:Featured Title 1}</div>
+<div class="featured-description">{text:Featured Description 1}</div>
+</div>
+<div class="featured-box">
+<div class="featured-image"><img src="{image:Featured Image 2}" /></div>
+<div class="featured-title">{text:Featured Title 2}</div>
+<div class="featured-description">{text:Featured Description 2}</div>
+</div>
+<div class="featured-box">
+<div class="featured-image"><img src="{image:Featured Image 3}" /></div>
+<div class="featured-title">{text:Featured Title 3}</div>
+<div class="featured-description">{text:Featured Description 3}</div>
+</div>
+</section>
+{/block:ifFeatured}
+<main>
+<aside class="sidebar">
+{block:ifAbout}
+<div class="box">
+<div class="box-title">{text:About Title}</div>
+<div class="box-body">
+{Description}
+</div>
+</div>
+{/block:ifAbout}
+{block:ifStatistics}
+<div class="box">
+<div class="box-title">{text:Statistics Title}</div>
+<div class="box-body">
+<div class="type-statistics">
+<div class="statistics-line">
+<div class="statistics-label">label</div>
+<div class="statistics-description">description goes here</div>
+</div>
+<div class="statistics-line">
+<div class="statistics-label">label</div>
+<div class="statistics-description">description goes here</div>
+</div>
+<div class="statistics-line">
+<div class="statistics-label">label</div>
+<div class="statistics-description">description goes here</div>
+</div>
+<div class="statistics-line">
+<div class="statistics-label">label</div>
+<div class="statistics-description">description goes here</div>
+</div>
+</div>
+</div>
+</div>
+{/block:ifStatistics}
+{block:ifCategories}
+<div class="box">
+<div class="box-title">{text:Categories Title}</div>
+<div class="box-body">
+<div class="type-categories">
+<a href="{text:Category 1 URL}" class="category">{text:Category 1 Name}</a>
+<a href="{text:Category 2 URL}" class="category">{text:Category 2 Name}</a>
+<a href="{text:Category 3 URL}" class="category">{text:Category 3 Name}</a>
+<a href="{text:Category 4 URL}" class="category">{text:Category 4 Name}</a>
+<a href="{text:Category 5 URL}" class="category">{text:Category 5 Name}</a>
+<a href="/" class="category">Label</a>
+</div>
+</div>
+</div>
+{/block:ifCategories}
+{block:ifProjects}
+<div class="box">
+<div class="box-title">{text:Projects Title}</div>
+<div class="box-body">
+<div class="type-projects">
+<div class="projects-line">
+<div class="projects-image"><img src="{image:Projects Image 1}" /></div>
+<div class="projects-description">
+<div class="projects-title">{text:Projects Title 1}</div>
+<div class="projects-details">{text:Projects Description 1}</div>
+</div>
+</div>
+<div class="projects-line">
+<div class="projects-image"><img src="{image:Projects Image 2}" /></div>
+<div class="projects-description">
+<div class="projects-title">{text:Projects Title 2}</div>
+<div class="projects-details">{text:Projects Description 2}</div>
+</div>
+</div>
+<div class="projects-line">
+<div class="projects-image"><img src="{image:Projects Image 3}" /></div>
+<div class="projects-description">
+<div class="projects-title">{text:Projects Title 3}</div>
+<div class="projects-details">{text:Projects Description 3}</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+{/block:ifProjects}
+{block:ifTeam}
+<div class="box">
+<div class="box-title">{text:Team Title}</div>
+<div class="box-body">
+<div class="type-people">
+<div class="people-image">
+<a href="[URL]" title="[Name]"><img src="[Image]" /></a>
+</div>
+<div class="people-image">
+<a href="[URL]" title="[Name]"><img src="[Image]" /></a>
+</div>
+<div class="people-image">
+<a href="[URL]" title="[Name]"><img src="[Image]" /></a>
+</div>
+<div class="people-image">
+<a href="[URL]" title="[Name]"><img src="[Image]" /></a>
+</div>
+<div class="people-image">
+<a href="[URL]" title="[Name]"><img src="[Image]" /></a>
+</div>
+<div class="people-image">
+<a href="[URL]" title="[Name]"><img src="[Image]" /></a>
+</div>
+<div class="people-image">
+<a href="[URL]" title="[Name]"><img src="[Image]" /></a>
+</div>
+<div class="people-image">
+<a href="[URL]" title="[Name]"><img src="[Image]" /></a>
+</div>
+</div>
+</div>
+</div>
+{/block:ifTeam}
+{block:ifAffiliates}
+<div class="box">
+<div class="box-title">{text:Affiliates Title}</div>
+<div class="box-body">
+<div class="type-people">
+<div class="people-image">
+<a href="[URL]" title="[Name]"><img src="[Image]" /></a>
+</div>
+<div class="people-image">
+<a href="[URL]" title="[Name]"><img src="[Image]" /></a>
+</div>
+<div class="people-image">
+<a href="[URL]" title="[Name]"><img src="[Image]" /></a>
+</div>
+<div class="people-image">
+<a href="[URL]" title="[Name]"><img src="[Image]" /></a>
+</div>
+<div class="people-image">
+<a href="[URL]" title="[Name]"><img src="[Image]" /></a>
+</div>
+<div class="people-image">
+<a href="[URL]" title="[Name]"><img src="[Image]" /></a>
+</div>
+<div class="people-image">
+<a href="[URL]" title="[Name]"><img src="[Image]" /></a>
+</div>
+<div class="people-image">
+<a href="[URL]" title="[Name]"><img src="[Image]" /></a>
+</div>
+</div>
+</div>
+</div>
+{/block:ifAffiliates}
+{block:ifDisclaimer}
+<div class="box">
+<div class="box-title">{text:Disclaimer Title}</div>
+<div class="box-body">
+{text:Disclaimer Text}
+</div>
+</div>
+{/block:ifDisclaimer}
+</aside>
+{block:Posts}<article class="entry">
+{block:ContentSource}
+{/block:ContentSource}
+<div class="post-permalink">
+<div class="post-link"><a href="{Permalink}">Open post</a></div>
+<div class="post-link">{Month} {DayOfMonth}</div>
+</div>
+{block:Text}<div class="spacing">
+{block:Title}<div class="post-title">
+<a href="{Permalink}">{Title}</a>
+</div>{/block:Title}
+{block:Body}<div class="caption">
+{Body}
+</div>{/block:Body}
+</div>{/block:Text}
+{block:Quote}<div class="spacing">
+<div class="quote-post quote-text">"{Quote}"</div>
+{block:Source}<div class="quote-post quote-source">{Source}</div>{/block:Source}
+</div>{/block:Quote}
+{block:Chat}<div class="spacing">
+{block:Title}<a href="{Permalink}"><div class="post-title">{Title}</div></a>{/block:Title}
+{block:Lines}
+<div class="chat-post"><ul>
+<li>{block:Label}<span class="chat-post person">{Label}</span>{/block:Label} {Line}</li>
+</ul></div>
+{/block:Lines}
+</div>{/block:Chat}
+{block:Video}
+<div class="video">{Video-500}</div>
+{/block:Video}
+{block:Photo}
+<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" />
+{/block:Photo}
+{block:Photoset}<div class="photoset-grid" photoset-layout="{PhotosetLayout}">
+{block:Photos}
+{block:LinkURL}{LinkOpenTag}{/block:LinkURL}
+<div><img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" /></div>
+{block:LinkURL}{LinkCloseTag}{/block:LinkURL}
+{/block:Photos}
+</div>{/block:Photoset}
+{block:Panorama}
+{LinkOpenTag}
+<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />
+{LinkCloseTag}
+{/block:Panorama}
+{block:Link}<div class="spacing">
+<div class="post-title"><a href="{URL}" {Target}>{Name}</a></div>
+{block:Description}
+<div class="caption">{Description}</div>
+{/block:Description}
+</div>{/block:Link}
+{block:AudioPlayer}<div class="spacing"><div class="audio-post audio">
+{block:AlbumArt}<div class="audio-post album-cover">
+<img src="{AlbumArtURL}" />
+</div>{/block:AlbumArt}
+<div class="audio-post audio-wrapper first">
+<div class="audio-post audio-wrapper second">
+<div class="audio-post player">{AudioPlayerWhite}</div>
+</div>
+</div>
+<div class="audio-post audio-details">
+{block:TrackName}{TrackName}<br>{/block:TrackName}
+{block:Artist}Artist: {Artist}<br>{/block:Artist}
+{block:Album}Album: {Album}<br>{/block:Album}
+</div>
+</div></div>{/block:AudioPlayer}
+{block:Answer}
+<div class="ask-post asker"><img src="{AskerPortraitURL-128}" /> <a href="{AskerUrl}">{AskerName}</a>:</div>
+<div class="ask-post question">{Question}</div>
+<div class="ask-post asker"><img src="{PortraitURL-128}" /> {Name}:</div>
+<div class="ask-post answer">{Answer}</div>
+{/block:Answer}
+{block:Caption}<div class="caption">
+{Caption}
+</div>{/block:Caption}
+{block:Date}<div class="post-info">
+<span class="post-detail"><a href="{Permalink}" class="note-count">{NoteCountWithLabel}</a></span>
+<span class="post-detail"><a href="{ReblogURL}">Reblog</a></span>
+<span class="post-detail"><a>{LikeButton color="grey" size="10"}</a></span>
+</div>{/block:Date}
+{block:HasTags}<div class="categories">
+{block:Tags}<a href="{TagURL}">{Tag}</a>{/block:Tags}
+</div>{/block:HasTags}
+{block:PostNotes}<div class="post-notes">
+{PostNotes}
+</div>{/block:PostNotes}
+</article>{/block:Posts}
+{block:Pagination}<section class="browse">
+{block:PreviousPage}<a href="{PreviousPage}"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+{/block:PreviousPage}
+{block:JumpPagination length="5"}
+{block:CurrentPage}<span class="current_page">{PageNumber}</span>{/block:CurrentPage}
+{block:JumpPage}<a class="jump_page" href="{URL}">{PageNumber}</a>{/block:JumpPage}
+{/block:JumpPagination}
+{block:NextPage}<a class="next" href="{NextPage}"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+{/block:NextPage}
+</section>{/block:Pagination}
+</main>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="92f442b199e247bbb0e4a83c-|49" defer="" type="a7394fa64b8018419279dabb-text/javascript"></script><script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="a7394fa64b8018419279dabb-|49" defer=""></script></body>
+</html>
