@@ -1,0 +1,96 @@
+iframe.tmblr-iframe{display:none!important}
+html{font-size:var(--fontsize);line-height:150%;}
+body{background:var(--background);color:var(--text);font-family:lato, sans-serif;}
+main{margin:25vh auto;width:26vw;}
+a{color:var(--links);}
+a:hover{color:var(--accent);}
+b{font-weight:700;color:var(--links);}
+i{font-style:italic;color:var(--accent);}
+small{font-size:.8rem;}
+big{font-size:1.3rem;}
+.if-no-following,.if-no-likes,.if-no-posts,.if-no-results{margin:25px auto;text-align:center;}
+
+[photoset-layout]{grid-gap:1px;}
+
+::-webkit-scrollbar{height:0;width:5px;background:var(--background);}
+::-webkit-scrollbar-thumb:vertical{height:auto;width:4px;background:var(--accent);border-radius:50px;}
+::-webkit-scrollbar:horizontal{display:none;}
+
+#s-m-t-tooltip{background:var(--accent);font-family:inherit;margin:10px 0 0 10px;padding:7px 20px;text-transform:lowercase;z-index:9999;color:var(--posts);}
+
+article.entry{background:var(--posts);margin-bottom:10vh;width:35vw;position:relative;padding:40px;}
+
+article.entry ul,article.entry ol{counter-reset:li 0;list-style:none;padding-left:10px;}
+article.entry ul li,article.entry ol li{list-style:none;margin:5px 0;}
+article.entry ul li:before,article.entry ol li:before{color:var(--accent);margin-right:20px;vertical-align:middle;}
+article.entry ul li:before{content:'\f0c8';font-family:fontawesome;font-size:7px;}
+article.entry ol li:before{content:counter(li);counter-increment:li;}
+
+article.entry blockquote{margin:20px 0;}
+article.entry blockquote blockquote{background:var(--background);padding:20px;font-style:italic;color:var(--links);}
+article.entry img.tumblr_avatar{float:left;width:20px;border-radius:5px;margin-right:10px;}
+
+article.entry .post-title,article.entry .post-title a{color:var(--accent);line-height:20px;font-size:1.2rem;text-transform:capitalize;font-weight:700;}
+
+article.entry .post-info{text-align:center;font-size:.95rem;margin-top:20px;}
+article.entry .post-info a{text-transform:capitalize;margin:0 10px;}
+article.entry .post-info .like_button{display:inline-block;position:relative;}
+article.entry .post-info .like_button iframe{height:100%;left:0;opacity:.000001;position:absolute;top:0;width:100%;}
+article.entry .post-info .like_button:before{content:'like';position:relative;}
+
+article.entry .categories{text-align:center;margin-top:30px;font-style:italic;}
+article.entry .categories a{margin:0 10px;font-size:.9rem;}
+
+article.entry .post-notes a{border:0;}
+article.entry .post-notes img{display:none;}
+article.entry .post-notes ol,article.entry .post-notes ul{margin:0;padding-left:20px;}
+article.entry .post-notes ol.notes li{list-style:none;padding:5px;}
+article.entry .post-notes ol.notes li img{list-style:none;margin-bottom:-10px;margin-right:3px;}
+article.entry .post-notes .retags{display:none;}
+article.entry .post-notes li.like:before,article.entry .post-notes li.reblog:before,article.entry .post-notes li.reply:before,article.entry .post-notes li.original_post:before{font:10px fontawesome!important;font-weight:900;left:-10px;margin-right:0;position:relative;vertical-align:middle;}
+article.entry .post-notes li.like:before{content:'\f004';}
+article.entry .post-notes li.reblog:before{content:'\f021';}
+article.entry .post-notes li.reply:before{content:'\f086';}
+article.entry .post-notes li.original_post:before{content:'\f007';}
+
+article.entry .quote-post.quote-text{font-style:italic;font-size:1.4rem;color:var(--accent);font-weight:700;margin-bottom:20px;}
+
+article.entry .chat-post,article.entry .chat-post ol,article.entry .chat-post ul{list-style:none;margin:0;padding:0;}
+article.entry .chat-post li:before{content:''!important;margin:0;}
+article.entry .chat-post li{background:var(--accent);padding:12px;color:var(--posts);font-style:italic;}
+article.entry .chat-post.person{font-weight:700;padding:0;font-style:normal;margin-right:10px;}
+
+article.entry .ask-post.question{background:var(--accent);color:var(--posts);padding:20px;font-style:italic;letter-spacing:.5px;text-align:justify;margin-bottom:50px;}
+article.entry .ask-post.asker{margin:20px 0;line-height:25px}
+article.entry .ask-post.asker img{margin-right:10px;width:25px;float:left;border-radius:5px;}
+article.entry .ask-post.answer{margin-bottom:50px;}
+
+article.entry .audio-post.audio{display: inline-block;margin: 20px;position: relative}
+article.entry .audio-post.album-cover{border-radius: 50%;position: absolute;width: 79px}
+article.entry .audio-post.album-cover img{border-radius: 50%;height: auto;width: 100%}
+article.entry .audio-post.player{left: -1px;position: absolute;top: 2px}
+article.entry .audio-post.audio-details{display: inline-block;line-height: 20px;margin-left: 90px;min-height: 85px;width: 100%}
+article.entry .audio-post.audio-wrapper.first{background: white;border-radius: 50%;height: 20px;left: 20px;-moz-transition: opacity .7s ease-in-out;opacity: .4;padding: 10px;position: absolute;top: 20px;transition: opacity .7s ease-in-out;-webkit-transition: opacity .7s ease-in-out;width: 20px}
+article.entry .audio-post.audio-wrapper.first:hover{opacity: 1}
+article.entry .audio-post.audio-wrapper.second{height: 19px;overflow: hidden;position: relative;width: 19px}
+
+article.entry .audio-post .tumblr_audio_player{height: 90px;margin: 1px !important;-moz-transform: scale(0.60,0.60);-moz-transform-origin: top left;-ms-transform: scale(0.60,0.60);-ms-transform-origin: top left;-o-transform: scale(0.60,0.60);-o-transform-origin: top left;transform: scale(0.60,0.60);transform-origin: top left;width: 270px}
+
+aside.sidebar{left:23vw;position:fixed;width:9vw;}
+aside.sidebar .box{background:var(--posts);padding:25px;text-align:justify;}
+aside.sidebar .avatar img{background:var(--posts);padding:30px;margin-bottom:20px;width:calc(9vw - 60px);}
+
+nav{background:var(--posts);padding:25px 40px;z-index:999;position:fixed;top:0;left:0;right:0;margin:40px;}
+nav a{font-size:.95rem;color:var(--links);margin-right:15px;text-transform:lowercase;}
+nav a:hover{color:var(--accent);}
+.top{position:fixed;z-index:999;top:0;right:0;left:0;background:var(--background);height:40px;}
+nav .second-menu{float:right;}
+
+section.browse{width:35vw;text-align:center;padding:0 40px;margin-top:-5vh;}
+section.browse a{margin:0 10px;}
+section.browse span.current_page{margin:0 10px;color:var(--accent);font-weight:700;}
+
+@media only screen and (max-width: 1024px) and (min-width: 993px) {
+aside.sidebar .avatar img{width:calc(15vw - 60px);}
+aside.sidebar{left:17vw;width:15vw;}
+}
