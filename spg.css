@@ -1,0 +1,37 @@
+/*
+
+    Percentage Graph
+
+by suiomi.com
+
+    Terms of Use apply
+www.suiomi.com/legal
+
+*/
+
+.s-pgraph{background:var(--emptyprogress);border-radius:50%;font-size:var(--graphsize);height:1em;position:relative;width:1em;}
+.s-pgraph > span{color:var(--percentage);font-size:.2em;line-height:5em;position:absolute;text-align:center;width:5em;z-index:1;}
+.s-pgraph:after{background:var(--percentagebackground);border-radius:50%;box-shadow:0 0 7px .02em rgba(0,0,0,.3);content:'';height:.82em;left:.09em;position:absolute;top:.09em;width:.82em;}
+.s-pgraph .s-pgraph-label{font-size:1rem;position:absolute;bottom:-30px;width:100%;text-align:center;}
+
+.rect-auto,.s-pgraph.p60 .s-pgraph-container,.s-pgraph.p70 .s-pgraph-container,.s-pgraph.p80 .s-pgraph-container,.s-pgraph.p90 .s-pgraph-container,.s-pgraph.p100 .s-pgraph-container{clip:rect(auto,auto,auto,auto);}
+.s-pgraph .s-pgraph-empty,.s-pgraph.p60 .s-pgraph-progress,.s-pgraph.p70 .s-pgraph-progress,.s-pgraph.p80 .s-pgraph-progress,.s-pgraph.p90 .s-pgraph-progress,.s-pgraph.p100 .s-pgraph-progress{border:.09em solid;border-radius:50%;clip:rect(0em,.5em,1em,0em);height:.82em;position:absolute;width:.82em;}
+.s-pgraph.p60 .s-pgraph-empty:after,.s-pgraph.p60 .s-pgraph-progress,.s-pgraph.p70 .s-pgraph-empty:after,.s-pgraph.p70 .s-pgraph-progress,.s-pgraph.p80 .s-pgraph-empty:after,.s-pgraph.p80 .s-pgraph-progress,.s-pgraph.p90 .s-pgraph-empty:after,.s-pgraph.p90 .s-pgraph-progress,.s-pgraph.p100 .s-pgraph-empty:after,.s-pgraph.p100 .s-pgraph-progress{transform:rotate(180deg);}
+
+.s-pgraph .s-pgraph-empty,.s-pgraph .s-pgraph-progress{border-color:var(--progress)!important;}
+.s-pgraph.p100 .s-pgraph-empty,.s-pgraph.p100 .s-pgraph-progress{border-color:var(--fullprogress)!important;}
+.s-pgraph .s-pgraph-container{clip:rect(0em,1em,1em,0.5em);height:1em;position:absolute;width:1em;}
+
+.s-pgraph.p10 .s-pgraph-empty{transform:rotate(36deg);}
+.s-pgraph.p20 .s-pgraph-empty{transform:rotate(72deg);}
+.s-pgraph.p30 .s-pgraph-empty{transform:rotate(108deg);}
+.s-pgraph.p40 .s-pgraph-empty{transform:rotate(144deg);}
+.s-pgraph.p50 .s-pgraph-empty{transform:rotate(180deg);}
+.s-pgraph.p60 .s-pgraph-empty{transform:rotate(216deg);}
+.s-pgraph.p70 .s-pgraph-empty{transform:rotate(252deg);}
+.s-pgraph.p80 .s-pgraph-empty{transform:rotate(288deg);}
+.s-pgraph.p90 .s-pgraph-empty{transform:rotate(324deg);}
+.s-pgraph.p100 .s-pgraph-empty{transform:rotate(360deg);}
+
+a.spc{text-decoration:none!important;border:0!important;background:transparent!important;}
+a.spc:before,a.spc:after{display:none!important;content:''!important}
