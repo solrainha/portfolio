@@ -1,0 +1,122 @@
+/*
+
+    Clara
+
+by suiomi.com
+
+--
+
+This work is protected under the Terms of Use available at
+suiomi.com/legal
+
+*/
+
+iframe.tmblr-iframe{top:10px!important;right:0!important;padding-right:30px!important;opacity:1!important;}
+
+html{font-size:var(--fontsize);}
+body{background:var(--background);color:var(--text);font-family:'lato', sans-serif;}
+main{display:table;position:relative;table-layout:fixed;width:100%;}
+
+section.left,section.right{display:table-cell;}
+section.left{bottom:0;left:-20px;overflow:hidden;position:fixed;right:50%;top:-20px;}
+section.left .background{background-position:20% 0;background-repeat:no-repeat;background-size:cover;filter:blur(5px);height:calc(100% + 10px);left:-30px;width:calc(100% + 10px);}
+section.right{bottom:0;left:50%;padding:110px;position:absolute;right:0;top:0;}
+.info-box{left:50%;position:absolute;text-align:center;top:50%;transform:translate(-50%,-50%);width:40%;}
+.description{color:var(--sidebartext);line-height:170%;}
+.blog-name{color:var(--sidebartext);font-size:.9rem;font-weight:800;letter-spacing:1px;margin-bottom:20px;text-transform:uppercase;}
+.avatar{margin-bottom:20px;}
+.avatar img{border-radius:50%;width:var(--avatarsize);height:var(--avatarsize)}
+
+hr{background:#ddd;height:1px;margin:20px;width:100%;}
+sup,sub{font-size:.6rem;}
+b{color:var(--accent);font-weight:bold;}
+i:not(.fa){color:var(--accent);font-style:italic;}
+small{font-size:.7rem;}
+big{font-size:1.3rem;}
+
+a{border-bottom:2px solid var(--borders);color:var(--accent);transition:linear all .2s;}
+a:hover{border-color:var(--accent);}
+
+::selection{background: var(--accent);color: #fff;}
+::-webkit-selection{background: var(--accent);color: #fff;}
+::-moz-selection{background: var(--accent);color: #fff;}
+::-o-selection{background: var(--accent);color: #fff;}
+
+::-webkit-scrollbar{height: 0px;width: 11px;background: var(--background);}
+::-webkit-scrollbar-thumb:vertical{height: auto;width: 10px;background: var(--postinfo);border-radius:50px;}
+::-webkit-scrollbar:horizontal{display: none;}
+
+#s-m-t-tooltip{background:var(--postcolour);color:var(--accent);font-family:inherit;margin:10px 0 0 10px;padding:7px 16px;text-transform:lowercase;z-index:9999;}
+
+article.entry{line-height:170%;margin:0 auto 7vh;position:relative;text-align:justify;width:33vw;}
+
+article.entry .share-info{margin-bottom:20px;}
+article.entry .share-info a{border:0;color:var(--postinfo);}
+
+article.entry ul,article.entry ol{counter-reset:li 0;list-style:none;padding-left:10px;}
+article.entry ul li,article.entry ol li{list-style:none;margin:5px 0;}
+article.entry ul li:before,article.entry ol li:before{color:var(--accent);margin-right:10px;vertical-align:middle;}
+article.entry ul li:before{content:'—';font-size:7px;}
+article.entry ol li:before{content:counter(li);counter-increment:li;}
+
+article.entry blockquote{margin:10px 0;}
+.tumblr_avatar,a.tumblr_blog{display:none;}
+
+article.entry .post-title,article.entry .post-title a{border:0;color:var(--text);font-size:2rem;font-weight:700;line-height:170%;margin-bottom:20px;}
+
+article.entry .post-info{margin-top:30px;}
+article.entry .post-info a:not(.note-count){border:0;color:var(--postinfo);font-size:.8rem;font-weight:800;margin-right:5px;}
+a.note-count{border:0;color:var(--accent);float:right;font-size:.9rem;}
+article.entry .post-info a:hover,a.note-count:hover{color:var(--accent);}
+article.entry .post-info .like_button{display:inline-block;position:relative;}
+article.entry .post-info .like_button iframe{height:100%;left:0;opacity:.0000001;position:absolute;top:0;width:100%;}
+article.entry .post-info .like_button:before{content:'\f08a';font-family:'fontawesome';position:relative;}
+
+article.entry .categories{font-size:.9rem;margin-top:20px;word-break:break-all;}
+article.entry .categories a{border:0;color:var(--accent);margin-right:10px;}
+article.entry .categories a:hover{color:var(--accent);}
+
+article.entry .post-notes a{border:0;}
+article.entry .post-notes img{filter:grayscale(1);transition:linear all .2s;width:20px;}
+article.entry .post-notes img:hover{filter:grayscale(0);}
+article.entry .post-notes ol,article.entry .post-notes ul{margin:0;padding:0;}
+article.entry .post-notes{margin-top:30px;}
+li.more_notes_link_container{font-size:.7rem;margin-left:10px!important;vertical-align:middle;}
+article.entry .post-notes ol.notes li{display:inline-block;}
+article.entry .post-notes ol.notes li img{list-style:none;margin-bottom:-10px;margin-right:3px;}
+a.more_notes_link{vertical-align:middle;}
+article.entry .post-notes .retags,span.action,.post-notes blockquote,article.entry .post-notes li.like:before,article.entry .post-notes li.reblog:before,article.entry .post-notes li.reply:before,article.entry .post-notes li.original_post:before{display:none;}
+
+article.entry .chat-post,article.entry .chat-post ol,article.entry .chat-post ul{list-style:none;margin:0;padding:0;}
+article.entry .chat-post li:before{content:''!important;margin:0;}
+article.entry .chat-post li{background:var(--postcolour);margin:0;padding:10px;}
+article.entry .chat-post ul:nth-child(odd) li{background:var(--borders);}
+article.entry .chat-post ul:nth-child(even) li{background:var(--postcolour);}
+article.entry .chat-post.person{font-weight:900;padding:0;}
+
+article.entry .ask-post.question{color:var(--accent);margin-bottom:30px;text-align:justify;}
+article.entry .ask-post.asker{height:25px;margin-bottom:20px;}
+article.entry .ask-post.asker img{border-radius:50%;float:left;margin-right:10px;width:25px;}
+
+article.entry .audio-post.audio{display: inline-block;margin: 20px;position: relative}
+article.entry .audio-post.album-cover{border-radius: 50%;position: absolute;width: 79px}
+article.entry .audio-post.album-cover img{border-radius: 50%;height: auto;width: 100%}
+article.entry .audio-post.player{left: -1px;position: absolute;top: 2px}
+article.entry .audio-post.audio-details{display: inline-block;line-height: 20px;margin-left: 90px;min-height: 85px;width: 100%}
+article.entry .audio-post.audio-wrapper.first{background: var(--postcolour);border-radius: 50%;height: 20px;left: 20px;-moz-transition: opacity .7s ease-in-out;opacity: .4;padding: 10px;position: absolute;top: 20px;transition: opacity .7s ease-in-out;-webkit-transition: opacity .7s ease-in-out;width: 20px}
+article.entry .audio-post.audio-wrapper.first:hover{opacity: 1}
+article.entry .audio-post.audio-wrapper.second{height: 19px;overflow: hidden;position: relative;width: 19px}
+
+article.entry .audio-post .tumblr_audio_player{height: 90px;margin: 1px !important;-moz-transform: scale(0.60,0.60);-moz-transform-origin: top left;-ms-transform: scale(0.60,0.60);-ms-transform-origin: top left;-o-transform: scale(0.60,0.60);-o-transform-origin: top left;transform: scale(0.60,0.60);transform-origin: top left;width: 270px}
+
+nav ul.menu{left:0;margin:0;padding:0;position:fixed;right:50%;text-align:center;top:0;z-index:999999999999;}
+nav ul.menu li{display:inline-block;margin:20px 10px;}
+nav ul.menu li:before{content:''!important;display:none;}
+nav ul.menu li a{border:0;color:var(--sidebartext);font-size:var(--fontsize);font-weight:500;letter-spacing:.5px;text-transform:capitalize;}
+nav ul.menu a:hover{color:var(--accent);}
+
+section.browse{bottom:30px;left:50%;position:absolute;transform:translate(-50%,0);}
+section.browse a{background:rgba(255,255,255,.3);border:0;border-radius:50%;display:inline-block;height:12px;margin:0 10px;vertical-align:middle;width:12px;}
+section.browse a:hover{background:white;}
+span.current_page{background:rgba(255,255,255,.3);border:3px solid white;border-radius:50%;display:inline-block;height:12px;vertical-align:middle;width:12px;}
+a img{border:0!important;display:block;}
