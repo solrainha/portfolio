@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html xmlns="//www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head><link rel="shortcut icon" href="{Favicon}"><link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+{MobileAppHeaders}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="//solrainha.github.io/resources/reset.css" /><a href="//www.suiomi.com"><credit></credit></a><link rel="stylesheet" type="text/css" href="//solrainha.github.io/resources/default.css" /><link rel="stylesheet" type="text/css" href="//solrainha.github.io/portfolio/kenya/style.css" />
+<title>{Title}{block:SearchPage} ({lang:Search results for SearchQuery}){/block:SearchPage}{block:PermalinkPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title>
+<link rel="alternate" type="application/rss+xml" href="{RSS}">{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+{block:Hidden}
+<meta name="text:Link 1 Label" title="Link 1 Label" content="Link 1" />
+<meta name="text:Link 1 URL" title="Link 1 URL" content="" />
+<meta name="text:Link 2 Label" title="Link 2 Label" content="Link 2" />
+<meta name="text:Link 2 URL" title="Link 2 URL" content="" />
+<meta name="text:Link 3 Label" title="Link 3 Label" content="Link 3" />
+<meta name="text:Link 3 URL" title="Link 3 URL" content="" />
+<meta name="text:Link 4 Label" title="Link 4 Label" content="Link 4" />
+<meta name="text:Link 4 URL" title="Link 4 URL" content="" />
+<meta name="text:Link 5 Label" title="Link 5 Label" content="Link 5" />
+<meta name="text:Link 5 URL" title="Link 5 URL" content="" />
+<meta title="13px" name="select:Font Size" content="13px" />
+<meta title="14px" name="select:Font Size" content="14px" />
+<meta title="15px" name="select:Font Size" content="15px" />
+<meta title="Background" name="color:Background" content="#ffffff" />
+<meta title="Accent 1" name="color:Accent 1" content="#e94057" />
+<meta title="Accent 2" name="color:Accent 2" content="#f27121" />
+<meta title="Text" name="color:Text" content="#777777" />
+<meta title="Links" name="color:Links" content="#333333" />
+<meta title="Borders" name="color:Borders" content="#eeeeee" />
+<meta title="Shadows" name="color:Shadows" content="#000000" />
+<meta title="Sidebar Text" name="color:Sidebar Text" content="#ffffff" />
+<meta title="Posts" name="color:Posts" content="#fafafa" />
+<meta title="Masonry" name="if:Masonry" content="" />
+<meta title="Square Elements" name="if:Square Elements" content="" />
+<meta title="Link 1 Icon" name="text:Link 1 Icon" content="comment" />
+<meta title="Link 2 Icon" name="text:Link 2 Icon" content="user" />
+<meta title="Link 3 Icon" name="text:Link 3 Icon" content="star" />
+<meta title="Link 4 Icon" name="text:Link 4 Icon" content="leaf" />
+<meta title="Link 5 Icon" name="text:Link 5 Icon" content="sun-o" />
+<meta title="Sidebar Avatar" name="image:Sidebar Avatar" content="" />
+{/block:Hidden}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="c59e8829cba85abf472e2ffb-text/javascript"></script><script src="//solrainha.github.io/resources/jquery.js" type="c59e8829cba85abf472e2ffb-text/javascript"></script><script src="//solrainha.github.io/resources/captions.js" type="c59e8829cba85abf472e2ffb-text/javascript"></script><script src="//solrainha.github.io/resources/tooltips.js" type="c59e8829cba85abf472e2ffb-text/javascript"></script><script src="//solrainha.github.io/resources/videos.js" type="c59e8829cba85abf472e2ffb-text/javascript"></script><script src="//solrainha.github.io/resources/scroll.js" type="c59e8829cba85abf472e2ffb-text/javascript"></script>{block:ifMasonry}<script src="//solrainha.github.io/resources/masonry.js" type="c59e8829cba85abf472e2ffb-text/javascript"></script><script src="//solrainha.github.io/resources/imgloaded.js" type="c59e8829cba85abf472e2ffb-text/javascript"></script>{/block:ifMasonry}
+<script src="//use.fontawesome.com/b67a5f5df8.js" type="c59e8829cba85abf472e2ffb-text/javascript"></script><link href="//fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Courgette" rel="stylesheet">
+<script type="c59e8829cba85abf472e2ffb-text/javascript" charset="utf-8">$(document).ready(function(){
+$("a[title]").style_my_tooltips({tip_follows_cursor:false,tip_delay_time:50,tip_fade_speed:600,attribute:"title"});
+$('.video iframe').each(function(){var scale=$(this).parents('.video').width()/500;$(this).attr({width:Math.floor($(this).attr('width')*scale)});});
+$("article.entry").unnest({yourCaption:".caption",wrapName:".tumblr_parent",newCaptionUsername:true,originalPostCaptionUsername:true,tumblrAvatars:true,usernameColon:false});
+{block:ifMasonry}var $grid=$("main.masonry-sidebar").masonry({itemSelector:"article.entry",initLayout:!1});$grid.on("layoutComplete",function(o,r){console.log(r.length)}),$grid.masonry({fitWidth:1,horizontalOrder:1,gutter:50,resize:1,percentPosition: true,columnWidth: '.sizer'}),$grid.imagesLoaded().progress(function(){$grid.masonry("layout")});{/block:ifMasonry}
+});</script>
+</head><style type="text/css">
+
+:root{
+    --background:{color:Background};
+    --accentone:{color:Accent 1};
+    --accenttwo:{color:Accent 2};
+    --text:{color:Text};
+    --borders:{color:Borders};
+    --shadows:{color:Shadows};
+    --sidebartext:{color:Sidebar Text};
+    --fontsize:{select:Font Size};
+    --posts:{color:Posts};
+    --links:{color:Links};
+}
+
+{block:ifMasonry}
+.clearfix:before,.clearfix:after{content:'';display:table;}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+main.masonry-sidebar{max-width:calc(1200px - 20vw);top:4vh;right:0;margin:0 auto;}
+main.masonry-sidebar:after{content:'';display:block;clear:both}
+.sizer{width:20%}
+article.entry{margin:50px;width:20vw;float:left}
+{/block:ifMasonry}
+
+{/block:ifNotMasonry}
+main{margin:10vh auto;width:20vw;}
+article.entry{margin-bottom:10vh;width:35vw;}
+{/block:ifNotMasonry}
+
+{block:ifNotSquareElements}
+article.entry .share-info,article.entry .share-info img,article.entry img.tumblr_avatar,article.entry .chat-post li,article.entry .ask-post.asker img,article.entry .ask-post.question,article.entry .audio-post.audio-wrapper.first,article.entry .audio-post.album-cover,article.entry .audio-post.album-cover img,aside.sidebar .box .box-avatar img,aside.sidebar .box .box-avatar,section.browse a,section.browse span.current_page,.controls a{border-radius: 50%;}
+{/block:ifNotSquareElements}
+
+aside.sidebar .box .box-avatar,section.browse a {background: rgba({RGBColor:Sidebar Text},.3);}
+
+{CustomCSS}</style><body>
+<div class="controls"><a href="//tumblr.com/follow/{Name}"><i class="fa fa-plus" aria-hidden="true"></i></a><a href="/archive"><i class="fa fa-th-large" aria-hidden="true"></i></a><a href="//tumblr.com"><i class="fa fa-power-off" aria-hidden="true"></i></a></div><aside class="sidebar"><div class="box"><div class="box-avatar"><img src="{image:Sidebar Avatar}" /></div><div class="box-title">{BlogTitle}</div><div class="box-body">{Description}</div><nav>
+<a href="/"><i class="fa fa-home" aria-hidden="true"></i>home</a>
+<a href="{text:Link 1 URL}"><i class="fa fa-{text:Link 1 Icon}" aria-hidden="true"></i>{text:Link 1 Label}</a>
+<a href="{text:Link 2 URL}"><i class="fa fa-{text:Link 2 Icon}" aria-hidden="true"></i>{text:Link 2 Label}</a>
+<a href="{text:Link 3 URL}"><i class="fa fa-{text:Link 3 Icon}" aria-hidden="true"></i>{text:Link 3 Label}</a>
+<a href="{text:Link 4 URL}"><i class="fa fa-{text:Link 4 Icon}" aria-hidden="true"></i>{text:Link 4 Label}</a>
+<a href="{text:Link 5 URL}"><i class="fa fa-{text:Link 5 Icon}" aria-hidden="true"></i>{text:Link 5 Label}</a>
+</nav></div>{block:Pagination}<section class="browse">{block:JumpPagination length="5"}{block:CurrentPage}<span class="current_page"></span>{/block:CurrentPage}{block:JumpPage}<a class="jump_page" href="{URL}"></a>{/block:JumpPage}{/block:JumpPagination}</section>{/block:Pagination}</aside>
+<main {block:ifMasonry}class="masonry-sidebar" { block:ifMasonry}>{block:ifMasonry}<div class="sizer"></div>{/block:ifMasonry}
+{block:SearchPage}{block:NoSearchResults}<div class="if-no-results">{lang:Sorry no search results found}.</div>{/block:NoSearchResults}{/block:SearchPage}
+{block:LikesPage}{block:NoLikes}<div class="if-no-likes"></div>{/block:NoLikes}{/block:LikesPage}
+{block:FollowingPage}{block:NoFollowing}<div class="if-no-following"></div>{/block:NoFollowing}{/block:FollowingPage}
+{block:IndexPage}{block:NoPosts}<div class="if-no-posts"></div>{/block:NoPosts}{/block:IndexPage}
+{block:Posts}<article class="entry">
+
+{block:ContentSource}
+
+{/block:ContentSource}
+<div class="share-info">{block:RebloggedFrom}<a href="{ReblogParentURL}" title="{ReblogParentName}"><img src="{ReblogRootPortraitURL-128}" /></a>{/block:RebloggedFrom}{block:NotReblog}<a href="//{Name}.tumblr.com" title="{PostAuthorName}"><img src="{PortraitURL-128}"></a>{/block:NotReblog}</div>
+{block:Text}{block:Title}<div class="post-title"><a href="{Permalink}">{Title}</a></div>{/block:Title}{block:Body}<div class="caption">{Body}</div>{/block:Body}{/block:Text}
+{block:Quote}<div class="quote-post quote-text">"{Quote}"</div>{block:Source}<div class="quote-post quote-source">{Source}</div>{/block:Source}{/block:Quote}
+{block:Chat}{block:Title}<a href="{Permalink}"><div class="post-title">{Title}</div></a>{/block:Title}<div class="chat-post">{block:Lines}<ul><li>{block:Label}<span class="chat-post person">{Label}</span>{/block:Label} {Line}</li></ul>{/block:Lines}</div>{/block:Chat}
+{block:Video}<div class="video">{Video-700}</div>{/block:Video}
+{block:Photo}{LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" {block:LivePhoto}data-live-photo="{LivePhotoURL}" data-live-photo-still-image-time="{LivePhotoStillImageTime}" { block:LivePhoto} />{LinkCloseTag}{/block:Photo}
+{block:Photoset}<div class="photoset-grid" photoset-layout="{PhotosetLayout}">{block:Photos}{block:LinkURL}{LinkOpenTag}{/block:LinkURL}<div><img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" /></div>{block:LinkURL}{LinkCloseTag}{/block:LinkURL}{/block:Photos}</div>{/block:Photoset}
+{block:Panorama}{LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />{LinkCloseTag}{/block:Panorama}
+{block:Link}<div class="post-title"><a href="{URL}" {Target}>{Name}</a></div>{block:Description}<div class="caption">{Description}</div>{/block:Description}{/block:Link}
+{block:AudioPlayer}<div class="audio-post audio">{block:AlbumArt}<div class="audio-post album-cover"><img src="{AlbumArtURL}" /></div>{/block:AlbumArt}<div class="audio-post audio-wrapper first"><div class="audio-post audio-wrapper second"><div class="audio-post player">{AudioPlayerWhite}</div></div></div><div class="audio-post audio-details">{block:TrackName}{TrackName}<br>{/block:TrackName}{block:Artist}Artist: {Artist}<br>{/block:Artist}{block:Album}Album: {Album}<br>{/block:Album}</div></div>{/block:AudioPlayer}
+{block:Answer}<div class="ask-post asker"><img src="{AskerPortraitURL-96}" /> {lang:Asker asked 2}:</div><div class="ask-post question">{Question}</div><div class="ask-post asker"><img src="{PortraitURL-96}" /> {Name} replied:</div><div class="ask-post answer">{Answer}</div>{/block:Answer}
+{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+{block:Date}<div class="post-info"><a href="{Permalink}" class="note-count">{NoteCount}</a><div class="share-buttons"><a href="{ReblogURL}"><span class="info-icon"><i class="fa fa-refresh" aria-hidden="true"></i></span></a><a>{LikeButton size="24" color="black"}</a></div></div>{/block:Date}
+{block:HasTags}<div class="categories">{block:Tags}<a href="{TagURL}">{Tag}</a>{/block:Tags}</div>{/block:HasTags}
+{block:PermalinkPage}{block:PostNotes}<div class="post-notes">{PostNotes}</div>{/block:PostNotes}{/block:PermalinkPage}
+</article>{/block:Posts}</main><script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="c59e8829cba85abf472e2ffb-|49" defer=""></script></body></html>
