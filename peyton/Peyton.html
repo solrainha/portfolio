@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html xmlns="//www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head><link rel="shortcut icon" href="{Favicon}"><link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+{MobileAppHeaders}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="//solrainha.github.io/resources/reset.css" /><a href="//www.suiomi.com"><credit></credit></a><link rel="stylesheet" type="text/css" href="//solrainha.github.io/resources/default.css" /><link rel="stylesheet" type="text/css" href="//solrainha.github.io/portfolio/peyton/style.css" />
+<title>{Title}{block:SearchPage} ({lang:Search results for SearchQuery}){/block:SearchPage}{block:PermalinkPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title><link rel="alternate" type="application/rss+xml" href="{RSS}">{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+{block:Hidden}
+<meta name="text:Link 1 Label" title="Link 1 Label" content="Link 1" />
+<meta name="text:Link 1 URL" title="Link 1 URL" content="" />
+<meta name="text:Link 2 Label" title="Link 2 Label" content="Link 2" />
+<meta name="text:Link 2 URL" title="Link 2 URL" content="" />
+<meta name="text:Link 3 Label" title="Link 3 Label" content="Link 3" />
+<meta name="text:Link 3 URL" title="Link 3 URL" content="" />
+<meta name="text:Link 4 Label" title="Link 4 Label" content="Link 4" />
+<meta name="text:Link 4 URL" title="Link 4 URL" content="" />
+<meta name="text:Link 5 Label" title="Link 5 Label" content="Link 5" />
+<meta name="text:Link 5 URL" title="Link 5 URL" content="" />
+<meta title="13px" name="select:Font Size" content="13px" />
+<meta title="14px" name="select:Font Size" content="14px" />
+<meta title="15px" name="select:Font Size" content="15px" />
+<meta title="Background" name="color:Background" content="#f6f6f6" />
+<meta title="Text" name="color:Text" content="#777777" />
+<meta title="Links" name="color:Links" content="#333333" />
+<meta title="Accent 1" name="color:Accent 1" content="#f7797d" />
+<meta title="Accent 2" name="color:Accent 2" content="#c6ffdd" />
+<meta title="Sidebar Text" name="color:Sidebar Text" content="#ffffff" />
+<meta title="Posts" name="color:Posts" content="#ffffff" />
+<meta name="text:Link 1 Icon" title="Link 1 Icon" content="comment" />
+<meta name="text:Link 2 Icon" title="Link 2 Icon" content="user" />
+<meta name="text:Link 3 Icon" title="Link 3 Icon" content="clock-o" />
+<meta name="text:Link 4 Icon" title="Link 4 Icon" content="pencil" />
+<meta name="text:Link 5 Icon" title="Link 5 Icon" content="bug" />
+<meta name="image:Sidebar Avatar" title="Sidebar Avatar" content="" />
+{/block:Hidden}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="07e3a5477f7499b794c579a4-text/javascript"></script><script src="//solrainha.github.io/resources/jquery.js" type="07e3a5477f7499b794c579a4-text/javascript"></script><script src="//solrainha.github.io/resources/captions.js" type="07e3a5477f7499b794c579a4-text/javascript"></script><script src="//solrainha.github.io/resources/tooltips.js" type="07e3a5477f7499b794c579a4-text/javascript"></script><script src="//solrainha.github.io/resources/videos.js" type="07e3a5477f7499b794c579a4-text/javascript"></script><script src="//solrainha.github.io/resources/scroll.js" type="07e3a5477f7499b794c579a4-text/javascript"></script>
+<script src="//use.fontawesome.com/b67a5f5df8.js" type="07e3a5477f7499b794c579a4-text/javascript"></script><link href="//fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Courgette" rel="stylesheet">
+<script type="07e3a5477f7499b794c579a4-text/javascript" charset="utf-8">$(document).ready(function(){
+$("a[title]").style_my_tooltips({tip_follows_cursor:false,tip_delay_time:50,tip_fade_speed:600,attribute:"title"});
+$('.video iframe').each(function(){var scale=$(this).parents('.video').width()/500;$(this).attr({width:Math.floor($(this).attr('width')*scale)});});
+$("article.entry").unnest({yourCaption:".caption",wrapName:".tumblr_parent",newCaptionUsername:true,originalPostCaptionUsername:true,tumblrAvatars:true,usernameColon:false});
+});</script></head><style type="text/css">
+
+:root{
+    --background:{color:Background};
+    --text:{color:Text};
+    --links:{color:Links};
+    --accentone:{color:Accent 1};
+    --accenttwo:{color:Accent 2};
+    --sidebartext:{color:Sidebar Text};
+    --posts:{color:Posts};
+    --fontsize:{select:Font Size};
+}aside.sidebar img{border:10px solid rgba({RGBColor:Sidebar Text},.5);}{CustomCSS}
+
+</style><body><main>
+{block:SearchPage}{block:NoSearchResults}<div class="if-no-results">{lang:Sorry no search results found}.</div>{/block:NoSearchResults}{/block:SearchPage}
+{block:LikesPage}{block:NoLikes}<div class="if-no-likes"></div>{/block:NoLikes}{/block:LikesPage}
+{block:FollowingPage}{block:NoFollowing}<div class="if-no-following"></div>{/block:NoFollowing}{/block:FollowingPage}
+{block:IndexPage}{block:NoPosts}<div class="if-no-posts"></div>{/block:NoPosts}{/block:IndexPage}
+<aside class="sidebar"><div class="box"><img src="{image:Sidebar Avatar}" /><div class="box-title">{BlogTitle}</div><div class="box-body">{Description}</div></div><nav><div class="nav-title">navigation</div><div class="row">
+<a href="/" class="odd"><i class="fa fa-home" aria-hidden="true"></i>home</a>
+<a href="{text:Link 1 URL}"><i class="fa fa-{text:Link 1 Icon}" aria-hidden="true"></i>{text:Link 1 Label}</a>
+</div><div class="row">
+<a href="{text:Link 2 URL}" class="odd"><i class="fa fa-{text:Link 2 Icon}" aria-hidden="true"></i>{text:Link 2 Label}</a>
+<a href="{text:Link 3 URL}"><i class="fa fa-{text:Link 3 Icon}" aria-hidden="true"></i>{text:Link 3 Label}</a>
+</div><div class="row">
+<a href="{text:Link 4 URL}" class="odd"><i class="fa fa-{text:Link 4 Icon}" aria-hidden="true"></i>{text:Link 4 Label}</a>
+<a href="{text:Link 5 URL}"><i class="fa fa-{text:Link 5 Icon}" aria-hidden="true"></i>{text:Link 5 Label}</a>
+</div></nav>{block:Pagination}<section class="browse"><a{block:PreviousPage} href="{PreviousPage}" { block:PreviousPage}>{block:PreviousPage}<i class="fa fa-chevron-left" aria-hidden="true"></i>{/block:PreviousPage}</a><a{block:NextPage} href="{NextPage}" { block:NextPage}>{block:NextPage}<i class="fa fa-chevron-right" aria-hidden="true"></i>{/block:NextPage}</a></section>{/block:Pagination}</aside>
+{block:Posts}<article class="entry">
+
+{block:ContentSource}
+
+{/block:ContentSource}
+{block:Text}<div class="spacing">{block:Title}<div class="post-title"><a href="{Permalink}">{Title}</a></div>{/block:Title}{block:Body}<div class="caption">{Body}</div>{/block:Body}</div>{/block:Text}
+{block:Quote}<div class="spacing"><div class="quote-post quote-text">"{Quote}"</div>{block:Source}<div class="quote-post quote-source">{Source}</div>{/block:Source}</div>{/block:Quote}
+{block:Chat}{block:Title}<a href="{Permalink}"><div class="post-title">{Title}</div></a>{/block:Title}<div class="chat-post">{block:Lines}<ul><li>{block:Label}<span class="chat-post person">{Label}</span>{/block:Label} {Line}</li></ul>{/block:Lines}</div>{/block:Chat}
+{block:Video}<div class="spacing"><div class="video">{Video-700}</div></div>{/block:Video}
+{block:Photo}<div class="spacing">{LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" {block:LivePhoto}data-live-photo="{LivePhotoURL}" data-live-photo-still-image-time="{LivePhotoStillImageTime}" { block:LivePhoto} />{LinkCloseTag}</div>{/block:Photo}
+{block:Photoset}<div class="spacing"><div class="photoset-grid" photoset-layout="{PhotosetLayout}">{block:Photos}{block:LinkURL}{LinkOpenTag}{/block:LinkURL}<div><img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" /></div>{block:LinkURL}{LinkCloseTag}{/block:LinkURL}{/block:Photos}</div></div>{/block:Photoset}
+{block:Panorama}<div class="spacing">{LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />{LinkCloseTag}</div>{/block:Panorama}
+{block:Link}<div class="spacing"><div class="post-title"><a href="{URL}" {Target}>{Name}</a></div>{block:Description}<div class="caption">{Description}</div>{/block:Description}</div>{/block:Link}
+{block:AudioPlayer}<div class="spacing"><div class="audio-post audio">{block:AlbumArt}<div class="audio-post album-cover"><img src="{AlbumArtURL}" /></div>{/block:AlbumArt}<div class="audio-post audio-wrapper first"><div class="audio-post audio-wrapper second"><div class="audio-post player">{AudioPlayerWhite}</div></div></div><div class="audio-post audio-details">{block:TrackName}{TrackName}<br>{/block:TrackName}{block:Artist}Artist: {Artist}<br>{/block:Artist}{block:Album}Album: {Album}<br>{/block:Album}</div></div></div>{/block:AudioPlayer}
+{block:Answer}<div class="ask-wrapper"><div class="ask-post asker"><img src="{AskerPortraitURL-96}" /></div><div class="ask-post question">{Question}</div></div><div class="ask-wrapper"><div class="ask-post replier"><img src="{PortraitURL-96}" /></div><div class="ask-post answer">{Answer}</div></div>{/block:Answer}
+{block:Date}<div class="post-info"><a title="{TimeAgo}"><i class="fa fa-calendar" aria-hidden="true"></i></a><a href="{ReblogURL}"><i class="fa fa-refresh" aria-hidden="true"></i></a><a>{LikeButton size="24" color="black"}</a><a href="{Permalink}" title="Open post"><i class="fa fa-link" aria-hidden="true"></i></a><a style="float:right">{NoteCountWithLabel}</a></div>{/block:Date}
+{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+{block:HasTags}<div class="categories">{block:Tags}<a href="{TagURL}">{Tag}</a>{/block:Tags}</div>{/block:HasTags}
+{block:PermalinkPage}{block:PostNotes}<div class="post-notes">{PostNotes}</div>{/block:PostNotes}{/block:PermalinkPage}
+</article>{/block:Posts}</main><script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="07e3a5477f7499b794c579a4-|49" defer=""></script></body></html>
