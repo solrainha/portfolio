@@ -21,6 +21,7 @@ sup{font-size:.7rem;}
 sub{font-size:.7rem;}
 b{font-weight:bold;color:var(--titles);}
 i:not(.fab),i:not(.fa){font-style:italic;color:var(--titles);}
+i.fa,i.fab{font-style:normal!important}
 small{font-size:.7rem;}
 big{font-size:1.3rem;}
 [photoset-layout]{grid-gap:var(--imagegap);}
