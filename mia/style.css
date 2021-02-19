@@ -20,7 +20,7 @@ hr{height:1px;background:var(--borders);margin:15px 0;width:100%;margin:20px;}
 sup{font-size:.7rem;}
 sub{font-size:.7rem;}
 b{font-weight:bold;color:var(--titles);}
-i:not(.fab){font-style:italic;color:var(--titles);}
+i:not(.fab),i:not(.fa){font-style:italic;color:var(--titles);}
 small{font-size:.7rem;}
 big{font-size:1.3rem;}
 [photoset-layout]{grid-gap:var(--imagegap);}
